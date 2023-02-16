@@ -1,0 +1,21 @@
+.hero {
+  height: 100vh;
+  display: flex;
+  
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.hero h1 {
+  font-size: 3.2rem;
+  font-weight: 900;
+  color: #000;
+  margin: 0;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 20px;
+  font-weight: 400;
+}
