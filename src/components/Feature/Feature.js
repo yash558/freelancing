@@ -1,6 +1,27 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './Feature.css'
+import whatimg from '../../assets/what.png'
+import whyimg from '../../assets/Why.png'
 const Feature = () => {
+    const [title, setTitle] = useState('What is Skillstribe?');
+    const [desc, setDesc] = useState("Skillstribe is a decentralized freelancer marketplace built off the Alacrity blockchain. It connects talent with work through an open ended marketplace.");
+    const [image, setImage] = useState(whatimg);
+
+    const what = () => {
+        setTitle("What is Skillstribe?");
+        setDesc("Skillstribe is a decentralized freelancer marketplace built off the Alacrity blockchain. It connects talent with work through an open ended marketplace.");
+        setImage(whatimg);
+    }
+    const why = () => {
+        setTitle("Why do we use it?");
+        setDesc("Skillstribe is the best work platform to use because you keep more of your earnings and pay less in fees (whether you are talent or hiring),you can settle payments with finality viaon-chain transactions, and you have direct access to the marketplace without any intermediaries");
+        setImage(whyimg);
+    }
+    const how = () => {
+        setTitle("How Does it Work?");
+        setDesc("Skillstribe is a series of deployed smart contraction the Alacrity blockchain. All key data is stored in GAIA Storage, which is a decentralised storage solution. Transactions and payments all occur via on-chain escrow contracts.There is no centralised fund custodian which needs to be trusted.");
+        setImage(whatimg);
+    }
     return (
         <div className="feature">
             <div className="feature_title justify-content-centeralign-content-center text-center">
@@ -12,11 +33,22 @@ const Feature = () => {
 
             <div className="feature_details align-items-center">
                 <div className="feature_btn">
-                    <button><a href="/">What</a></button>
-                    <button><a href="/">Why</a></button>
-                    <button><a href="/">How</a></button>
+                    <button onClick={what}>What</button>
+                    <button onClick={why}>Why</button>
+                    <button onClick={how}>How</button>
+                </div>
+                <div className="feature_info">
+                    <div className="info_left">
+                        <h1>{title}</h1>
+                        <p>{desc}</p>
+                    </div>
+                    <div className="info-right">
+                        <img src={image} alt="" />
+                    </div>
                 </div>
             </div>
+
+
         </div>
     )
 }

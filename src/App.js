@@ -1,11 +1,15 @@
 import React from 'react';
 import './App.css';
 import Home from './Screens/Home/Home';
+import Account from './Screens/Account/Account';
+import Navbar from './components/Navbar/Navbar';
 
 function App() {
   return (
     <div className="App">
-     <Home/>
+      <Navbar/>
+     {/* <Home/> */}
+     <Account/>
     </div>
   );
 }
