@@ -64,9 +64,28 @@
 
 .input-icons .search i {
   -webkit-text-stroke: 1px #000;
-
   font-weight: 900;
   position: relative;
-
   color: #000;
+}
+
+@media screen and (max-width: 992px) {
+ .navbar .buttons{
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ }
+ .navbar .input-icons{
+  display: flex;
+  justify-content: center;  
+  margin-top: 1rem;
+  width: 100%;
+ }
+}
+  
+@media screen and (max-width: 768px) {
+  .navbar .search {
+    display: none;
+  }
 }

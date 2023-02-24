@@ -14,7 +14,7 @@ const User = () => {
            <UserCart/>
         </div>
         <div className="user_right">
-        <RatingCard heading="Branding Design Guidelines" date="11/01/2023" months="7 months" price = "7*" level="Expert" desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris" />
+        <RatingCard heading="Welcome Evangilin" date="11/01/2023" months="7 months" price = "7*" level="Expert" desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris" />
         </div>
     </div>
   )
